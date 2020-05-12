@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+}
+#mainDiv {
+    text-align: center;
+}
+#showTimeDiv {
+    display: inline-block;
+    width: 20%;
+}
+#showSB {
+    width: 20%;
+    margin: auto;
+}
+#buttons {
+    margin: auto;
+    width: 20%;
+}
+.inline {
+    width: auto;
+    border: 4px solid black;
+    
+}
+#showTimeP {
+    border: 4px solid black;
+    text-align: center;
+}
