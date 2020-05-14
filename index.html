@@ -3,27 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="mainDiv">
-        <h1>Pomodoro Clock</h1>
-        <div id="showTimeDiv">
-            <p id="showTimeP">TIME</p>
-        </div>
-        <div id="showSB">
-            <p id="showSession" class="inline" style="float: left; width: 125px;">SESSION</p>
-            <p id="showBreak" class="inline" style="float: right; width: 125px;">BREAK</p>
-        </div>
-        <div id="buttons">
-            <button class="inline" style="float: left; width: 66px;margin-right: 2px;">UP</button>
-            <button class="inline" style="float: left; width: 66px;">DOWN</button>
-            <button class="inline" style="float: right; width: 66px; margin-left: 2px;">UP</button>
-            <button class="inline" style="float: right; width: 66px;">DOWN</button>
-            <button class="inline" style="margin-top: 10px; width: 270px;">START</button>
-        </div>
-    </div>
-    <script src="main.js"></script>
+    <div class="grid-container">
+        <div class="TIME"><p id="showTimeP">TIME</p></div>
+        <div class="SESSION"><p>SESSION</p></div>
+        <div class="TIMe"><p>BREAK</p></div>
+        <div class="sessionTime"><p id="showSession">25</p></div>
+        <div class="breakTime"><p id="showBreak">5</p></div>
+        <div class="but1"><img id="increaseSessionTime" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABTUlEQVRoge3Zvy5DYRjH8U8ZxGRktGDlAgwGicFqNboFq9EtuAESq7E3wGQyqIkYJQZhqMgxnLwJpXVa50+f5HyT39Lp923St8/7vLS0tPzFDNYw13SRSTlDhgfsy4VC8S4XSLnGdqONxiQbki7WG+xVmGECGT5wjuWmyhVhlEDKG46x0FDHkRQRSHnCoSk7scYRSOlhD50G+v5gEoGUK2zWX/k7/xFIucBK3cUTZQhk6OMEi/XWL08g5QVHmI8qkPKIA8xGFUi5wW5kgZQuNiILZCoaTeoUSCl1NGlCIKWU0aRJgZQetn4rV2RWycbSrY4+lvD89cNw18NBogjcYcfAt1+U9kc8QcIeo6H/yCrbclRdPOwwF3acDnuhCX2lDHupvxR0rXIr6GIr7GrxVdDlbuj1epgHjvBPTKfy4veCPvJ1sGrKTpaWlpacT29TgzR1FtwRAAAAAElFTkSuQmCC" style="transform: rotate(270deg);"></div>
+        <div class="but2"><img id="decreaseSessionTime" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABTUlEQVRoge3Zvy5DYRjH8U8ZxGRktGDlAgwGicFqNboFq9EtuAESq7E3wGQyqIkYJQZhqMgxnLwJpXVa50+f5HyT39Lp923St8/7vLS0tPzFDNYw13SRSTlDhgfsy4VC8S4XSLnGdqONxiQbki7WG+xVmGECGT5wjuWmyhVhlEDKG46x0FDHkRQRSHnCoSk7scYRSOlhD50G+v5gEoGUK2zWX/k7/xFIucBK3cUTZQhk6OMEi/XWL08g5QVHmI8qkPKIA8xGFUi5wW5kgZQuNiILZCoaTeoUSCl1NGlCIKWU0aRJgZQetn4rV2RWycbSrY4+lvD89cNw18NBogjcYcfAt1+U9kc8QcIeo6H/yCrbclRdPOwwF3acDnuhCX2lDHupvxR0rXIr6GIr7GrxVdDlbuj1epgHjvBPTKfy4veCPvJ1sGrKTpaWlpacT29TgzR1FtwRAAAAAElFTkSuQmCC" style="transform: rotate(90deg);"></div>
+        <div class="but3"><img id="increaseBreakTime" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABTUlEQVRoge3Zvy5DYRjH8U8ZxGRktGDlAgwGicFqNboFq9EtuAESq7E3wGQyqIkYJQZhqMgxnLwJpXVa50+f5HyT39Lp923St8/7vLS0tPzFDNYw13SRSTlDhgfsy4VC8S4XSLnGdqONxiQbki7WG+xVmGECGT5wjuWmyhVhlEDKG46x0FDHkRQRSHnCoSk7scYRSOlhD50G+v5gEoGUK2zWX/k7/xFIucBK3cUTZQhk6OMEi/XWL08g5QVHmI8qkPKIA8xGFUi5wW5kgZQuNiILZCoaTeoUSCl1NGlCIKWU0aRJgZQetn4rV2RWycbSrY4+lvD89cNw18NBogjcYcfAt1+U9kc8QcIeo6H/yCrbclRdPOwwF3acDnuhCX2lDHupvxR0rXIr6GIr7GrxVdDlbuj1epgHjvBPTKfy4veCPvJ1sGrKTpaWlpacT29TgzR1FtwRAAAAAElFTkSuQmCC" style="transform: rotate(270deg);"></div>
+        <div class="but4"><img id="decreaseBreakTime" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABTUlEQVRoge3Zvy5DYRjH8U8ZxGRktGDlAgwGicFqNboFq9EtuAESq7E3wGQyqIkYJQZhqMgxnLwJpXVa50+f5HyT39Lp923St8/7vLS0tPzFDNYw13SRSTlDhgfsy4VC8S4XSLnGdqONxiQbki7WG+xVmGECGT5wjuWmyhVhlEDKG46x0FDHkRQRSHnCoSk7scYRSOlhD50G+v5gEoGUK2zWX/k7/xFIucBK3cUTZQhk6OMEi/XWL08g5QVHmI8qkPKIA8xGFUi5wW5kgZQuNiILZCoaTeoUSCl1NGlCIKWU0aRJgZQetn4rV2RWycbSrY4+lvD89cNw18NBogjcYcfAt1+U9kc8QcIeo6H/yCrbclRdPOwwF3acDnuhCX2lDHupvxR0rXIr6GIr7GrxVdDlbuj1epgHjvBPTKfy4veCPvJ1sGrKTpaWlpacT29TgzR1FtwRAAAAAElFTkSuQmCC" style="transform: rotate(90deg);"></div>
+        <div class="but5"><img id="startStop" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAABTUlEQVRoge3Zvy5DYRjH8U8ZxGRktGDlAgwGicFqNboFq9EtuAESq7E3wGQyqIkYJQZhqMgxnLwJpXVa50+f5HyT39Lp923St8/7vLS0tPzFDNYw13SRSTlDhgfsy4VC8S4XSLnGdqONxiQbki7WG+xVmGECGT5wjuWmyhVhlEDKG46x0FDHkRQRSHnCoSk7scYRSOlhD50G+v5gEoGUK2zWX/k7/xFIucBK3cUTZQhk6OMEi/XWL08g5QVHmI8qkPKIA8xGFUi5wW5kgZQuNiILZCoaTeoUSCl1NGlCIKWU0aRJgZQetn4rV2RWycbSrY4+lvD89cNw18NBogjcYcfAt1+U9kc8QcIeo6H/yCrbclRdPOwwF3acDnuhCX2lDHupvxR0rXIr6GIr7GrxVdDlbuj1epgHjvBPTKfy4veCPvJ1sGrKTpaWlpacT29TgzR1FtwRAAAAAElFTkSuQmCC"></div>
+      </div>
+      <script src="main.js"></script>
 </body>
 </html>
